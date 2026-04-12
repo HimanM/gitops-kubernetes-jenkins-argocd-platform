@@ -268,7 +268,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/himanm/devops-project-3.git
+    repoURL: https://github.com/HimanM/gitops-kubernetes-jenkins-argocd-platform.git
     targetRevision: HEAD
     path: k8s
     directory:
@@ -330,7 +330,7 @@ const jenkinsFiles = [
     environment {
         DOCKER_CRED = credentials('dockerhub-username')
         GIT_CRED_ID = 'github-token' 
-        REPO_URL = 'github.com/himanm/devops-project-3.git'
+        REPO_URL = 'github.com/HimanM/gitops-kubernetes-jenkins-argocd-platform.git'
     }
     stages {
         stage('Update Manifests') {
@@ -387,7 +387,7 @@ export default function Home() {
             Automated, secure, and scalable.
           </p>
           <div className="flex flex-wrap gap-4">
-            <Link href="https://github.com/himanm/devops-project-3" target="_blank">
+            <Link href="https://github.com/HimanM/gitops-kubernetes-jenkins-argocd-platform" target="_blank">
               <Button size="lg" className="bg-zinc-800 hover:bg-zinc-700 text-white gap-2">
                 <Github className="h-4 w-4" /> GitHub Repo
               </Button>
@@ -513,7 +513,7 @@ metadata:
   namespace: argocd
 spec:
   source:
-    repoURL: https://github.com/himanm/devops-project-3.git
+    repoURL: https://github.com/HimanM/gitops-kubernetes-jenkins-argocd-platform.git
     path: k8s
   destination:
     server: https://kubernetes.default.svc
