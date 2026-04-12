@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/himanm/devops-project-3.git # REPLACE WITH YOUR REPO URL
+    repoURL: https://github.com/HimanM/gitops-kubernetes-jenkins-argocd-platform.git # REPLACE WITH YOUR REPO URL
     targetRevision: HEAD
     path: k8s
     # Exclude Ingress manifest to avoid conflicts with existing NodePort and system Nginx configuration.

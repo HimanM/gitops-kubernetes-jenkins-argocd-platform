@@ -150,14 +150,14 @@ First, fork this repository to your own GitHub account, then clone it:
 
 ```bash
 # Clone the repository (replace with your fork URL)
-git clone https://github.com/<YOUR-USERNAME>/DevOps-Project-3.git
-cd DevOps-Project-3
+git clone https://github.com/<YOUR-USERNAME>/gitops-kubernetes-jenkins-argocd-platform.git
+cd gitops-kubernetes-jenkins-argocd-platform
 ```
 
 ### 2. Review the Project Structure
 
 ```
-DevOps-Project-3/
+gitops-kubernetes-jenkins-argocd-platform/
 ├── frontend/          # Next.js frontend application
 ├── backend/           # Flask backend API
 ├── k8s/              # Kubernetes manifest files
@@ -598,7 +598,7 @@ This pipeline handles code building, testing, and Docker image creation.
 4. Under **Pipeline** section:
    - **Definition**: Pipeline script from SCM
    - **SCM**: Git
-   - **Repository URL**: `https://github.com/<YOUR-USERNAME>/DevOps-Project-3.git` (use your fork)
+   - **Repository URL**: `https://github.com/<YOUR-USERNAME>/gitops-kubernetes-jenkins-argocd-platform.git` (use your fork)
    - **Branch Specifier**: `*/main`
    - **Script Path**: `Jenkinsfile`
 5. Under **Build Triggers** (optional):
@@ -620,7 +620,7 @@ This pipeline updates Kubernetes manifests with new image tags.
 5. Under **Pipeline** section:
    - **Definition**: Pipeline script from SCM
    - **SCM**: Git
-   - **Repository URL**: `https://github.com/<YOUR-USERNAME>/DevOps-Project-3.git` (use your fork)
+   - **Repository URL**: `https://github.com/<YOUR-USERNAME>/gitops-kubernetes-jenkins-argocd-platform.git` (use your fork)
    - **Branch Specifier**: `*/main`
    - **Script Path**: `Jenkinsfile.deploy`
 6. Click **Save**
@@ -646,7 +646,7 @@ Update the `repoURL` field to point to your forked repository:
 ```yaml
 spec:
   source:
-    repoURL: https://github.com/<YOUR-USERNAME>/DevOps-Project-3.git  # Update this
+    repoURL: https://github.com/<YOUR-USERNAME>/gitops-kubernetes-jenkins-argocd-platform.git  # Update this
     targetRevision: main
     path: k8s
 ```
