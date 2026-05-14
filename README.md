@@ -1,3 +1,9 @@
+<!-- BANNER_START -->
+<p align="center">
+  <img src="./.banner/banner.svg" width="100%" alt="Project Banner">
+</p>
+<!-- BANNER_END -->
+
 # DevOps Project 3: Full-Stack GitOps Deployment
 
 > **A hands-on GitOps implementation demonstrating modern DevOps practices with Kubernetes, Jenkins, and ArgoCD**
